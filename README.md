@@ -44,6 +44,7 @@ Algumas variáveis podem apresentar correlação, o que pode influenciar na perf
 Este dataset pode ser utilizado para problemas de regressão linear, regressão polinomial, entre outros.
 
 
+Aprendizado Não Supervisionado
 Nome: Customer Segmentation Dataset
 Link: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 Objetivo: Segmentar clientes em grupos distintos com base em seus dados demográficos e de comportamento de compra.
