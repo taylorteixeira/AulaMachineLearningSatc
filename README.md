@@ -58,3 +58,5 @@ Observações:
 Este dataset é ideal para aplicar algoritmos de clustering como K-means, Mean Shift Clustering e Agglomerative Clustering.
 A análise dos clusters formados pode revelar insights importantes sobre o comportamento dos clientes, como a identificação de grupos com alto potencial de compra ou grupos com baixo índice de fidelidade.
 Após a segmentação, outras análises e modelos de aprendizado de máquina podem ser aplicados para otimizar as estratégias de marketing e vendas.
+
+

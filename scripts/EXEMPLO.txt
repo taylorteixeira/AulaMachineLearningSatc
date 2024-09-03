@@ -1,0 +1,65 @@
+import pandas as pd
+import numpy as np
+
+# Realizando leitura do arquivo csv
+dataframe = pd.read_csv('titanic.csv', index_col=False)
+
+# Tamanho do dataFrame
+dataframe.shape
+
+# info dataset
+dataframe.info()
+
+print("------------ Obeservando index --------------")
+
+# Obeservando index
+dataframe.index
+
+# Deletando colunas
+dataframe.drop(['Ticket', 'SibSp', 'Parch'], axis=1, inplace=True)
+
+# Contando valores nulos
+dataframe.isnull().sum()
+
+# Verificando o valor médio para Age
+dataframe['Age'].mean()
+
+# preenchendo os valores nulos de Age com  valor médio
+dataframe['Age'].fillna(dataframe['Age'].mean(), inplace=True)
+
+print("------------ Obeservando Preprocessing --------------")
+
+# Pegar dados de uma coluna
+
+from sklearn import preprocessing
+
+scaler = preprocessing.StandardScaler()
+
+fare = dataframe['Fare'].values
+fare
+
+# Reorganizar dados em um array (colunas) para ficar menor e mais facil para analizar de 0 a 1
+fare_scaled = scaler.fit_transform(fare.reshape(-1, 1))
+fare_scaled
+
+# Max e Min
+fare_scaled.min(), fare_scaled.max()
+
+dataframe['Fare'] = fare_scaled
+dataframe.head()
+
+print("------------ Obeservando Encoder --------------")
+
+# Transformar as string em numeros e mais facil para analizar 0 a (número de categorias -1)
+encoder = preprocessing.OrdinalEncoder()
+
+sex = dataframe['Sex'].values
+sex_encoder = encoder.fit_transform(sex.reshape(-1, 1))
+
+dataframe['Sex_encoded'] = sex_encoder
+dataframe.head()
+
+one_hot_encoder = preprocessing.OneHotEncoder()
+
+sex_one_hot_encoder = one_hot_encoder.fit_transform(dataframe['Sex'].values.reshape(-1, 1))
+one_hot_encoder.get_feature_names_out(['Sex'])
