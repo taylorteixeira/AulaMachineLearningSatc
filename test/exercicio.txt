@@ -1,0 +1,110 @@
+1. Um modelo de detecção de fraudes em transações financeiras obteve os seguintes resultados:
+
+· 450 transações foram corretamente classificadas como não fraudulentas.
+
+· 30 transações foram erroneamente classificadas como não fraudulentas.
+
+· 20 transações foram erroneamente classificadas como fraudulentas.
+
+· 100 transações foram corretamente classificadas como fraudulentas.
+
+
+2. Um sistema de diagnóstico médico para detecção de doenças obteve os seguintes resultados:
+
+
+· 800 pacientes foram corretamente diagnosticados como saudáveis.
+
+· 20 pacientes foram erroneamente diagnosticados como saudáveis.
+
+· 30 pacientes foram erroneamente diagnosticados como doentes.
+
+· 150 pacientes foram corretamente diagnosticados como doentes.
+
+
+
+3. Um modelo de detecção de spam em mensagens de texto obteve os seguintes resultados:
+
+
+· 1200 mensagens foram corretamente classificadas como não spam.
+
+· 40 mensagens foram erroneamente classificadas como não spam.
+
+· 60 mensagens foram erroneamente classificadas como spam.
+
+· 200 mensagens foram corretamente classificadas como spam.
+
+
+
+4. Um sistema de reconhecimento facial obteve os seguintes resultados:
+
+
+· 1500 imagens de pessoas foram corretamente identificadas.
+
+· 50 imagens foram erroneamente identificadas como pessoas.
+
+· 30 imagens de pessoas foram erroneamente identificadas como não pessoas.
+
+· 300 imagens de pessoas foram corretamente identificadas como não pessoas.
+
+
+Para cada exercício, calcule as métricas de avaliação do modelo, incluindo acurácia, precisão, recall e F1-Score. E também monte a matriz de confusão.5.
+
+
+
+
+
+
+
+5. Você foi encarregado de resolver um problema de classificação utilizando aprendizado de máquina. Para isso, siga os passos abaixo:
+
+
+a. Selecione um dataset adequado para a tarefa de classificação. O dataset pode ser obtido de repositórios públicos, como o Kaggle ou UCI Machine Learning Repository.
+
+b. Divida o dataset em dois conjuntos: um de treino e outro de teste, garantindo que o conjunto de teste represente uma amostra significativa dos dados.
+
+c. Treine um modelo de aprendizado de máquina de sua escolha (por exemplo, uma árvore de decisão, regressão logística, ou qualquer outro classificador adequado) utilizando o conjunto de treino.
+
+d. Após o treinamento, aplique o modelo ao conjunto de teste e obtenha as previsões.
+
+e. Avalie o desempenho do modelo utilizando a matriz de confusão e calcule métricas como acurácia, precisão, recall e F1-score com base nos resultados do conjunto de teste.
+
+f. Comente sobre a performance do modelo com base nas métricas extraídas.
+
+
+
+
+
+
+
+6. Você foi encarregado de resolver um problema de regressão utilizando aprendizado de máquina. Para isso, siga os passos abaixo:
+
+1. Selecione um dataset adequado para a tarefa de regressão. O dataset pode ser obtido de repositórios públicos, como o Kaggle ou UCI Machine Learning Repository.
+
+2. Divida o dataset em dois conjuntos: um de treino e outro de teste, garantindo que o conjunto de teste represente uma amostra significativa dos dados.
+
+3. Treine um modelo de aprendizado de máquina de sua escolha (por exemplo, regressão linear, árvore de decisão, ou outro modelo adequado) utilizando o conjunto de treino.
+
+4. Após o treinamento, aplique o modelo ao conjunto de teste para realizar as previsões.
+
+5. Avalie o desempenho do modelo utilizando métricas de regressão, como o erro quadrático médio (MSE), erro absoluto médio (MAE), R², entre outras que considerar pertinentes.
+
+6. Comente sobre a performance do modelo com base nas métricas extraídas e identifique possíveis ajustes ou melhorias no modelo.
+
+
+
+
+
+
+7. Neste exercício, você irá trabalhar com a persistência de modelos de aprendizado de máquina, utilizando as bibliotecas Pickle e Joblib para salvar e carregar os modelos treinados. Utilize os modelos de classificação e regressão criados nos exercícios anteriores e siga as instruções abaixo:
+
+1. Selecione os modelos: Utilize os modelos de classificação e regressão que você treinou nos exercícios anteriores.
+
+2. Salve os modelos com Pickle ou Joblib:
+
+o Após treinar cada modelo (classificação e regressão), utilize a biblioteca para salvar os modelos em arquivos no disco.
+
+3. Carregue os modelos com Pickle ou Joblib:
+
+o Após salvar os modelos, simule uma nova sessão de trabalho e carregue os modelos salvos.
+
+o Realize previsões com os modelos carregados.
